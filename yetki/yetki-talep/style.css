@@ -50,7 +50,7 @@ body {
 }
 .yetki-talep-container .main div {
   padding: 1rem;
-  max-height: 15rem;
+  max-height: 20rem;
   overflow-y: scroll;
 }
 .yetki-talep-container .main div::-webkit-scrollbar-track {
