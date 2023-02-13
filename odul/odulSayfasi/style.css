@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.prize-container {
+  width: 42rem;
+  height: 36rem;
+  margin: auto;
+  display: flex;
+  border-radius: 1rem;
+}
+.prize-container .prize-right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: linear-gradient(180deg, #E9A246 -5.26%, rgba(168, 73, 4, 0.81) 49.56%, #FFDF33 100%);
+}
+.prize-container .prize-left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: #052B16;
+}
+.prize-container .prize-mid {
+  width: 18rem;
+  background: linear-gradient(0deg, #D7D7D7 0%, rgba(208, 200, 200, 0.06) 100%);
+}
+
+.prize-left .prize-directory {
+  display: flex;
+  margin-left: 0.8rem;
+  margin-top: 6rem;
+  height: 24rem;
+  padding-left: 1rem;
+  padding-right: 0.2rem;
+}
+.prize-left .prize-directory .vector-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  gap: 0.5rem;
+  background-color: #026330;
+}
+.prize-left .prize-directory .vector-box img {
+  margin-top: -2rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.prize-left .prize-directory .vector-box .absolute {
+  position: absolute;
+  bottom: -1rem;
+  align-self: center;
+}
+.prize-left .prize-directory .prize-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0.3rem;
+  height: 20rem;
+  color: rgba(255, 255, 255, 0.39);
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  margin-left: 0.4rem;
+}
+.prize-left .prize-directory .prize-days .taken {
+  color: #fff;
+}
+.prize-left .prize-directory .prize-days .prize-day p {
+  font-size: 0.7rem;
+}
+.prize-left .prize-directory .prize-days .prize p {
+  margin-top: 0.2rem;
+  font-size: 1.5rem;
+}
+.prize-left .prize-slogan {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #fff;
+  font-style: italic;
+}
+
+.prize-mid {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+}
+.prize-mid .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.prize-mid .header .exit {
+  z-index: 1;
+}
+.prize-mid .header .exit:hover {
+  cursor: pointer;
+}
+.prize-mid .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 1rem;
+}
+.prize-mid .main .contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.prize-mid .main .contain p {
+  font-size: 0.8rem;
+  color: #9B9B9B;
+}
+.prize-mid .main .contain span {
+  color: #999697;
+  font-size: 1.5rem;
+}
+.prize-mid .main .contain .total {
+  border: 1px solid #B7B7B7;
+  background-color: #B7B7B7;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  color: #27030F;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.prize-mid .footer {
+  text-align: center;
+}
+.prize-mid .footer button {
+  background: #E79F00;
+  border-radius: 0.5rem;
+  color: #020000;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.prize-right {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+}
+.prize-right .header {
+  z-index: 99;
+}
+.prize-right .coin {
+  position: absolute;
+}
+.prize-right .coin1 {
+  top: -1rem;
+  left: -1rem;
+  transform: rotate(45deg);
+}
+.prize-right .coin2 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.prize-right .coin3 {
+  right: -1rem;
+  top: 3rem;
+  transform: rotate(45deg);
+}
+.prize-right h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #020000;
+  margin-top: 1rem;
+}
+.prize-right p {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.prize-right p span {
+  font-weight: 800;
+}
+.prize-right .main {
+  margin-top: 1rem;
+}
+.prize-right .footer .contain {
+  margin-top: 0.4rem;
+  background-color: #000;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.prize-right .footer .contain .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.prize-right .footer .contain .text-box p {
+  display: inline;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4rem;
+}
+.prize-right .footer .contain .text-box span {
+  font-weight: 300;
+  line-height: 1rem;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.78);
+}/*# sourceMappingURL=style.css.map */
