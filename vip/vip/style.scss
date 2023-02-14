@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.vip-container{
+    width: 82rem;
+    border: 1px solid red;
+    background-color: #052B16;
+    border-radius: 1rem;
+    overflow: hidden;
+            .vip-header{
+                background-color: #083A1F;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding: 1rem;
+                            .header-activity{
+                                width: 80%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding:0 1rem ;
+                                        .payment-methods{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 1rem;
+                                                    button{
+                                                        background-color:#52B84A;
+                                                        border-radius: .5rem;
+                                                        border: none;
+                                                        outline: none;
+                                                        display: flex;
+                                                        gap: .3rem;
+                                                        align-items: center;
+                                                        height: 3rem;
+                                                        padding: 0 .5rem;
+                                                        color: #fff;
+                                                        cursor: pointer;
+                                                        font-weight: 700;
+                                                        font-size: 1.1rem;
+                                                    }
+                                        }
+                                        .exit-button{
+                                            cursor: pointer;
+                                        }
+                            }
+            }
+
+            .vip-body{
+                display: flex;
+                        .left-side{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: start;
+                            padding: 1rem;
+                            width: 20%;
+                            gap: 1rem;
+                                        button{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+                                            gap: .5rem;
+                                            width: 11rem;
+                                            height: 6rem;
+                                            background-color:#FCE35A ; 
+                                            border-radius: .5rem;
+                                            font-size: 1.5rem;
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                            &.active {
+                                                background-color: #0ADDEF;
+                                            }                                           
+                                        }
+                        }
+                        .right-side{
+                                    width: 80%;
+                                    padding: 1rem;
+
+                                .body-container{
+                                    display: flex;
+                                    overflow-x: scroll;
+                                    overflow-y: hidden;
+                                    height: 27rem;
+                                    &::-webkit-scrollbar-track {
+                                        background-color: #0C6434;
+                                        border-radius: 0.7rem;
+                                    }
+                        
+                                    &::-webkit-scrollbar {
+                                        width: 1rem;
+                                    }
+                        
+                                    &::-webkit-scrollbar-thumb {
+                                        border-radius: 0.7rem;
+                                        background-color: #e6b424;
+                                    }
+                                    .items{
+                                        min-width: 15.8rem;
+                                        min-height: 24.2rem;
+                                        background-image: url("../assets/images/Rectangle32.png");
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        background-size: contain;
+                                        display: flex;
+                                        align-items: center;
+                                        
+
+                                                    .inimage{
+                                                        margin: auto;
+                                                        width: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        color: #fff;
+                                                        font-size: 1.5rem;
+                                                        position: relative;
+                                                        &.active::after{
+                                                            content: "";
+                                                            background-image: url(../assets/images/Frame13.png);
+                                                            background-position: center;
+                                                            background-repeat: no-repeat;
+                                                            width: 180px;
+                                                            height: 79px;
+                                                            position: absolute;
+                                                            top: 50%;
+                                                            transform: translateY(-50%);
+                                                        }
+                                                            
+                                                            p{
+                                                                margin-top: 1rem;
+                                                            }
+                                                            button{
+                                                                margin-top: 1rem;
+                                                                background-color: #019C02;
+                                                                border: none;
+                                                                outline: none;
+                                                                border-radius: .7rem;
+                                                                padding: .5rem 1rem;
+                                                                color: #fff;
+                                                                font-size: 1.4rem;
+                                                                font-weight: 700;
+                                                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                                                cursor: pointer;
+                                                            }
+                                                    }
+                                    }
+                                }
+                        }
+            }
+}
