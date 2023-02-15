@@ -119,6 +119,31 @@ html,body{
                                         background-size: contain;
                                         display: flex;
                                         align-items: center;
+                                        position: relative;
+                                        &::before{
+                                            content: "";
+                                            background-image: url("../assets/images/Ellipse1.png");
+                                            width: 59px;
+                                            height: 62px;
+                                            position: absolute;
+                                            top: 1rem;
+                                            left: 1rem;
+                                            background-repeat: no-repeat;
+                                            
+                                        }
+                                        &::after{
+                                            content: "";
+                                            background-image: url("../assets/images/Ellipse2.png");
+                                            width: 95px;
+                                            height: 111px;
+                                            position: absolute;
+                                            top: 50%;
+                                            transform: translateY(-150%);
+                                            left: 50%;
+                                            background-repeat: no-repeat;
+
+                                            
+                                        }
                                         
 
                                                     .inimage{
@@ -131,6 +156,20 @@ html,body{
                                                         color: #fff;
                                                         font-size: 1.5rem;
                                                         position: relative;
+                                                        z-index: 999;
+                                                        &::before{
+                                                            content: "";
+                                                            background-image: url("../assets/images/Ellipse3.png");
+                                                            width: 63px;
+                                                            height: 58px;
+                                                            position: absolute;
+                                                            top: 50%;
+                                                            left: 100%;
+                                                            transform: translate(-100%,-100%);
+                                                            background-repeat: no-repeat;
+                                                            z-index: 1;
+                                                            
+                                                        }
                                                         &.active::after{
                                                             content: "";
                                                             background-image: url(../assets/images/Frame13.png);
