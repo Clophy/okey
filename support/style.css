@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.support {
+  width: 79rem;
+  height: 59rem;
+}
+.support .header {
+  display: flex;
+  justify-content: center;
+  background-color: #083A1F;
+  color: #FFCE61;
+  padding: 1rem;
+  position: relative;
+}
+.support .header p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.support .header img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+.support .body {
+  background-color: #052B16;
+  color: #FFF;
+  padding: 1rem 2rem 2rem;
+}
+.support .body > p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+.support .body .radio-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+.support .body .support-special {
+  width: 100%;
+  display: flex;
+}
+.support .body .support-special .left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.support .body .support-special .left-side p {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.support .body .support-special .left-side textarea {
+  resize: none;
+  margin-top: 0.5rem;
+  width: 34rem;
+  height: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.support .body .support-special .left-side textarea:focus {
+  outline: #870000;
+}
+.support .body .support-special .left-side button {
+  width: 11rem;
+  height: 3.1rem;
+  background: linear-gradient(180deg, #257835 0%, #206C31 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.7rem;
+}
+.support .body .support-special .right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.support .body .support-special .right-side p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.support .body .support-special .right-side img {
+  width: 31rem;
+  height: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+}
+.support .body .support-special .right-side button {
+  width: 11rem;
+  height: 3.1rem;
+  background: linear-gradient(180deg, #DD0000 0%, #870000 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.7rem;
+}/*# sourceMappingURL=style.css.map */
