@@ -1,0 +1,83 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.5rem;
+  height: 2.5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.6rem;
+  width: 1.6rem;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #52B84A;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #52B84A;
+}
+
+input:checked + .slider:before {
+  left: auto;
+  right: 5%;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.little-settings {
+  width: 13.5rem;
+  background-color: #052B16;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.little-settings .header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.little-settings .body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+.little-settings .body .sound, .little-settings .body .invite, .little-settings .body .request, .little-settings .body .chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
