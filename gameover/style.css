@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-180deg, #26B505 -50%, #0c4224 90%);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 0.15rem solid #FFCE61;
+}
+.gameOver p {
+  color: #FFCE61;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.gameOver p span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.gameOver img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
