@@ -23,7 +23,7 @@ body {
   justify-content: center;
   border: 0.2rem solid #FFCE61;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
 }
 .pending-popup .puan p {
