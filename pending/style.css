@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.pending-popup {
+  background-color: #034320;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #FFCE61;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  position: relative;
+}
+.pending-popup .puan p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #052B16;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 1rem;
+}
+.pending-popup .puan p img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.pending-popup .masa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+.pending-popup .masa-info > * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pending-popup .masa-info .infos {
+  background-color: #052B16;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+}
+.pending-popup .footer-info p {
+  color: #fff;
+  border-top: 1px solid #FFCE61;
+  margin-top: 1rem;
+}
+.pending-popup .logout-table {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #FFCE61;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.2rem solid #052B16;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
