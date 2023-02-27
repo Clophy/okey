@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.puantablosu {
+  background-image: url(/assets/images/bg1.png);
+  width: 34rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.puantablosu .table {
+  background-color: #011D0E;
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+.puantablosu .table .player {
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.puantablosu .table .player img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+.puantablosu .table .player > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+.puantablosu .table .player .scores {
+  margin-top: 0.5rem;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.puantablosu .table .player .scores.even > .score {
+  background-color: #052B16;
+}
+.puantablosu .table .player .scores.odd > .score {
+  background-color: #18422A;
+}
+.puantablosu .table .player .scores .score {
+  text-align: center;
+}
+.puantablosu .buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.puantablosu .buttons button {
+  border-radius: 0.7rem;
+  border: 0.1rem solid wheat;
+  cursor: pointer;
+  color: #FFCE61;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: linear-gradient(168.51deg, rgba(41, 110, 55, 0.86) 58.79%, rgba(27, 84, 41, 0) 92.44%);
+}/*# sourceMappingURL=style.css.map */
