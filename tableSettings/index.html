@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="table-settings">
+        <div class="header">
+            <p>Masa Özellikleri</p>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="body">
+            <div class="left-side">
+                <div class="gosterge">
+                    <p>Gösterge</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <div class="esli">
+                    <p>Eşli</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <div class="canak">
+                    <p>Çanak</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="masaChatt">
+                    <p>Masa Sohbeti</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <div class="viewersChat">
+                    <p>İzleyici Sohbeti</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <div class="viewers">
+                    <p>İzleyiciler</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="bottom-side">
+                <input type="range" min="1" max="100" value="50" class="range" id="myRange">
+                <p>Çip Miktarı: <span id="cipMiktari"></span></p>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <button>Uygula</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var range = document.getElementById("myRange");
+        var output = document.getElementById("cipMiktari");
+        output.innerHTML = range.value;
+        
+        range.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+    
+</body>
+</html>
